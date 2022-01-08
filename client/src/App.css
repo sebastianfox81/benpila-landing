@@ -30,20 +30,8 @@ a {
   padding: 10px;
 }
 
-.navbar-links {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.navbar-links-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.navbar-links-container li {
+.navbar li {
   list-style-type: none;
   text-decoration: none;
   font-family: var(--font-family);
