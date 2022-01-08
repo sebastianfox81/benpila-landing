@@ -1,12 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
 const Navbar = () => {
   return (
-    <nav className="nav-wrapper">
-      <div className="container">
-        <a className="guitar-logo">Logo</a>
-        <ul>
+    <div className="navbar">
+      <div className="navbar-links">
+        <div className="navbar-links_logo"></div>
+        <ul className="navbar-links-container">
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/about'>About</Link></li>
           <li><Link to='/media'>Media</Link></li>
@@ -14,7 +15,7 @@ const Navbar = () => {
           <li><Link to='/contact'>Contact</Link></li>
         </ul>
       </div>
-    </nav>
+    </div>
 
   )
 }
