@@ -23,24 +23,36 @@ a {
       background:radial-gradient(circle at 17% 28%, rgba(30, 41, 123, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
+.title {
+  align-content: center;
+}
+
 .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   padding: 10px;
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    flex-direction: column;
+  }
 }
 
 
 .navbar li {
   list-style-type: none;
-  text-decoration: none;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 18px;
   line-height: 25px;
   text-transform: capitalize;
-  margin: 10px 45px;
+  /* padding: 10px 45px; */
   cursor: pointer;
+  /* min-width: 0; */
+
 }
 
 

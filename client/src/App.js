@@ -5,12 +5,14 @@ import About from './components/About';
 import Media from './components/Media';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import Header from './components/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <Header />
         <Navbar />
           <Routes>
             <Route exact path='/' element={<Home />}></Route>
